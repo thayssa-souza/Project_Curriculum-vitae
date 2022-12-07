@@ -1,8 +1,9 @@
-  <main>
-    <app-info-general></app-info-general>
-    <section>
-      <app-experiences [infoBasics]="data.experience"></app-experiences>
-    </section>
-  </main>
-  <footer>
-  </footer>
+<main>
+  <app-info-general></app-info-general>
+  <section>
+    <app-experiences [experiences]="data.experience"></app-experiences>
+  </section>
+</main>
+<footer>
+  <app-footer [dataFooter]="data.footer"></app-footer>
+</footer>

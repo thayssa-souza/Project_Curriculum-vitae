@@ -1,12 +1,6 @@
-<div class="container">
+<div class="container" *ngFor="let experience of experiences">
   <div class="info">
-    <mat-icon class="info__icon">{{infoBasics[0].titleSection.icon}}</mat-icon>
-    <h2>{{infoBasics[0].titleSection.name}}</h2>
-  </div>
-</div>
-<div class="container">
-  <div class="info">
-    <mat-icon class="info__icon">{{infoBasics[1].titleSection.icon}}</mat-icon>
-    <h2>{{infoBasics[1].titleSection.name}}</h2>
+    <mat-icon class="info__icon">{{experience.titleSection.icon}}</mat-icon>
+    <p>{{experience.titleSection.name}}</p>
   </div>
 </div>

@@ -7,5 +7,5 @@ import { Experiences } from 'src/models/experiences.models';
   styleUrls: ['./experiences.component.css']
 })
 export class ExperiencesComponent {
-  @Input() public infoBasics!: Experiences[];
+  @Input() public experiences!: Experiences[];
 }
