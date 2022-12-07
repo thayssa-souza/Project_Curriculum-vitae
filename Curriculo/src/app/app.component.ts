@@ -51,7 +51,10 @@ export class AppComponent {
     ],
     experience: [
       {
-        titleSection: 'Work Experience',
+        titleSection: {
+          name: 'Work Experience',
+          icon: 'work',
+        },
         experiences : [{
           title: 'Front End Developer / w3schools.com',
           timeStart: 'Jan 2015',
@@ -72,7 +75,10 @@ export class AppComponent {
           }]
       },
       {
-        titleSection: 'Education',
+        titleSection: {
+          name: 'Education',
+          icon: 'stars',
+        },
         experiences : [{
           title: 'W3Schools.com',
           timeStart: 'Forever',

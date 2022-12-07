@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Experiences } from 'src/models/experiences.models';
 
 @Component({
   selector: 'app-experiences',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./experiences.component.css']
 })
 export class ExperiencesComponent {
-
+  @Input() public infoBasics!: Experiences[];
 }

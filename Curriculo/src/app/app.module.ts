@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {MatIconModule} from '@angular/material/icon'
 
 import { AppComponent } from './app.component';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
@@ -16,7 +17,8 @@ import { ExperienceComponent } from './components/experience/experience.componen
     ExperienceComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

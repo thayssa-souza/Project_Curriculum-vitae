@@ -1,0 +1,17 @@
+:host .container{
+  background-color: aquamarine;
+  margin: 14px 14px 0 14px;
+  padding: 28px ;
+  box-shadow: 1px 1px 1px 1px #d5d4d4;
+
+}
+:host .info{
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+}
+:host .info__icon{
+  padding-right: 60px;
+  font-size: 40px;
+  min-height: 38px
+}
