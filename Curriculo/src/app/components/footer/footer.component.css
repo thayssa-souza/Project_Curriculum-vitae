@@ -7,7 +7,7 @@
   position: relative;
   margin-top: 16px;
   bottom: 0;
-  background-color: aquamarine;
+  background-color: #009688;
 }
 
 :host h3 {
@@ -29,5 +29,6 @@
 }
 
 :host mat-icon{
-  font-size: 22px;
+  font-size: 24px;
+  color: #fff;
 }
