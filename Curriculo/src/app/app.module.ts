@@ -7,6 +7,7 @@ import { ExperiencesComponent } from './components/experiences/experiences.compo
 import { FooterComponent } from './components/footer/footer.component';
 import { InfoGeneralComponent } from './components/info-general/info-general.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { FormsComponent } from './components/forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ExperienceComponent } from './components/experience/experience.componen
     ExperiencesComponent,
     FooterComponent,
     InfoGeneralComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
