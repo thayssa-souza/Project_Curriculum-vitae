@@ -1,7 +1,8 @@
 <main>
-  <app-info-general></app-info-general>
+  <app-info-general [basicInfo]="data.basicInfo"></app-info-general>
   <section class="experiences">
     <app-experiences [experiences]="data.experience"></app-experiences>
+    <app-forms></app-forms>
   </section>
   <!-- <app-login></app-login> -->
 </main>

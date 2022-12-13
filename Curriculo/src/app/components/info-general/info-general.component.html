@@ -1,34 +1,34 @@
 <section class="containerSection">
   <section class="imgAndInfos">
     <div class="img_perfil">
-      <img src="../../../assets/images/img_perfil.webp" alt="">
-      <h2>Nome</h2>
+      <img src="{{basicInfo.profileImg}}" alt="">
+      <h2 [innerHTML]="basicInfo.name"></h2>
     </div>
     <div>
       <div class="items">
           <span class="material-symbols-outlined">
             business_center
           </span>
-          <h3>Designer</h3>
+          <h3 [innerHTML]="basicInfo.office"></h3>
         </div>
 
         <div class="items">
           <span class="material-symbols-outlined">
             house
           </span>
-        <h3>London, UK</h3>
+        <h3 [innerHTML]="basicInfo.city"></h3>
     </div>
     <div class="items">
         <span class="material-symbols-outlined">
           mail
         </span>
-        <h3>ex@email.com</h3>
+        <h3 [innerHTML]="basicInfo.email"></h3>
       </div>
       <div class="items">
         <span class="material-symbols-outlined">
           call
         </span>
-        <h3>1224435534</h3>
+        <h3 [innerHTML]="basicInfo.phoneNumber"></h3>
       </div>
 
     </div>
@@ -42,27 +42,27 @@
     </div>
 
     <p>Adobe Photoshop</p>
-    <div>
-      <div>
-        <p>90%</p>
+    <div class="containerSkills">
+      <div class="box90">
+        <h6>90%</h6>
       </div>
     </div>
     <p>Photography</p>
-    <div>
-      <div>
-        <p>80%</p>
+    <div class="containerSkills">
+      <div class="box80">
+        <h6>80%</h6>
       </div>
     </div>
     <p>Illustrator</p>
-    <div>
-      <div>
-        <p>75%</p>
+    <div class="containerSkills">
+      <div class="box75">
+        <h6>75%</h6>
       </div>
     </div>
     <p>Media</p>
-    <div>
-      <div>
-        <p>50%</p>
+    <div class="containerSkills">
+      <div class="box50">
+        <h6>50%</h6>
       </div>
     </div>
   </section>
@@ -75,18 +75,18 @@
     </div>
 
     <p>English</p>
-    <div>
-      <div>
+    <div class="containerLanguages">
+      <div class="box100">
       </div>
     </div>
     <p>Spanish</p>
-    <div>
-      <div>
+    <div class="containerLanguages">
+      <div class="box55">
       </div>
     </div>
     <p>German</p>
-    <div>
-      <div>
+    <div class="containerLanguages">
+      <div class="box25">
       </div>
     </div>
   </section>

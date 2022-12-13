@@ -12,7 +12,7 @@ export class AppComponent {
   public data: DataApp = {
     basicInfo: {
       name: 'Jane Doe',
-      profileImg: 'endereco aqui',
+      profileImg: '../assets/images/img_perfil.webp',
       office: 'Designer',
       city: 'London, UK',
       email: 'ex@mail.com',
@@ -43,11 +43,11 @@ export class AppComponent {
       },
       {
         name: 'Spanish',
-        level: '75%',
+        level: '55%',
       },
       {
         name: 'German',
-        level: '20%',
+        level: '25%',
       },
     ],
     experience: [
