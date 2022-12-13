@@ -1,1 +1,36 @@
-<p>forms works!</p>
+<form [formGroup]="form">
+    <div>
+    </div>
+    <div class="input-group">
+        <label class="input-group-text" for="nome">Nome</label>
+        <input class="form-control"
+        formControlName = "nome"
+        id = "nome"
+        type = "text"
+        placeholder="Nome completo"
+        required
+        />
+    </div>
+
+    <div class="input-group">
+        <label class="input-group-text" for="email">Email</label>
+        <input class="form-control"
+        formControlName = "email"
+        id = "email"
+        type = "email"
+        placeholder="name@example.com"
+        required
+        />
+    </div>
+
+    <div class="input-group">
+        <label class="input-group-text" for="message">Mensagem</label>
+        <textarea class="form-control"
+        formControlName = "message"
+        id = "message"
+        placeholder="Digite sua mensagem"
+        required
+        ></textarea>
+    </div>
+    <button type="submit" class="btn btn-outline-success" (click)="submitForm()">Enviar</button>
+</form>
