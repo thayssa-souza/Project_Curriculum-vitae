@@ -1,29 +1,31 @@
 <section class="container">
-  <form class="form">
-    <h2 class="form__title">Login</h2>
-    <form [formGroup]="form">
-      <div>
-        <label for="user">User Name</label>
-        <input
-          type="text"
-          id="user"
-          type="text"
-          placeholder="Digite seu usuário"
-          formControlName="userName"
-        />
-      </div>
+  <h2 class="form__title">Login</h2>
+  <form [formGroup]="form">
+    <div class="form-field">
+      <label class="form-field__label" for="user">User Name</label>
+      <input
+        class="form-field__input"
+        type="text"
+        id="user"
+        type="text"
+        placeholder="Type your user name..."
+        formControlName="userName"
+      />
+    </div>
 
-      <div>
-        <label for="passwordUser">Password</label>
-        <input
-          type="password"
-          id="passwordUser"
-          type="password"
-          placeholder="Digite sua senha"
-          formControlName="password"
-        />
-      </div>
-    </form>
-    <button class="btn" (click)="loginForm($event)">Login</button>
+    <div class="form-field">
+      <label class="form-field__label" for="passwordUser">Password</label>
+      <input
+        class="form-field__input"
+        type="password"
+        id="passwordUser"
+        type="password"
+        placeholder="Type your password..."
+        formControlName="password"
+      />
+    </div>
+    <div class="button-wrapper">
+      <button class="btn" (click)="loginForm($event)">Login</button>
+    </div>
   </form>
 </section>
