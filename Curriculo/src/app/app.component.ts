@@ -12,7 +12,7 @@ export class AppComponent {
   public data: DataApp = {
     basicInfo: {
       name: 'Jane Doe',
-      profileImg: '../assets/images/img_perfil.webp',
+      profileImg: '../assets/images/img_perfil.png',
       office: 'Designer',
       city: 'London, UK',
       email: 'ex@mail.com',
