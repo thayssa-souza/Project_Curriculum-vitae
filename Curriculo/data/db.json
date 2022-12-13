@@ -1,0 +1,91 @@
+{
+  "User": [
+    {
+      "id": 1,
+      "loginData": {
+        "userName": "mj",
+        "password": "spiderman",
+        "date": "2022-12-12T21:34:17.155Z"
+      },
+      "personalInformationData": {
+        "name": "Zendaya Coleman",
+        "occupation": "Designer",
+        "cpf": "456.784.147-78",
+        "zipCode": "012345-67",
+        "city": "Recife",
+        "state": "PE",
+        "email": "ex@email.com",
+        "phone": "1224435534"
+      },
+      "skillData:": [
+        {
+          "skillName": "Adobe Photoshop",
+          "level": "90%"
+        },
+        {
+          "skillName": "Photography",
+          "level": "80%"
+        },
+        {
+          "skillName": "Illustrator",
+          "level": "75%"
+        },
+        {
+          "skillName": "Media",
+          "level": "50%"
+        }
+      ],
+      "languages": [
+        "English",
+        "Spanish",
+        "German"
+      ]
+    },
+    {
+      "languages": null,
+      "loginData": {
+        "userName": "dsadsa",
+        "password": "dsadsa",
+        "date": "2022-12-13T22:27:52.046Z"
+      },
+      "personalInformationData": {
+        "name": "dsada",
+        "occupation": null,
+        "cpf": "dsadsa",
+        "zipCode": "dsadsa",
+        "city": "dsada",
+        "state": "dsadsa",
+        "email": "teste@gmail.com",
+        "phone": "dsadsa"
+      },
+      "skillData": {
+        "skillName": "dsadsa",
+        "level": "dsadsa"
+      },
+      "id": 2
+    },
+    {
+      "languages": "dsadsa",
+      "loginData": {
+        "userName": "dsadsa",
+        "password": "dsadsa",
+        "date": "2022-12-13T22:38:57.720Z"
+      },
+      "personalInformationData": {
+        "name": "dsad",
+        "occupation": "dsadsa",
+        "cpf": "dsad",
+        "zipCode": "dsa",
+        "city": "dsa",
+        "state": "dsada",
+        "email": "teste@gmail.com",
+        "phone": "dsadsa"
+      },
+      "skillData": {
+        "skillName": "dsada",
+        "level": "dsadsa"
+      },
+      "id": 3
+    }
+  ]
+}

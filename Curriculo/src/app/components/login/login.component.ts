@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { LoginFormData } from 'src/models/login-data.models';
+import { UsersService } from 'src/app/services/users.service';
+import { CreateUserData } from 'src/models/createUser-data.models';
+import { LoginData } from 'src/models/login-data.models';
 
 @Component({
   selector: 'app-login',
@@ -8,8 +10,10 @@ import { LoginFormData } from 'src/models/login-data.models';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-  loginData!: LoginFormData;
+  loginData!: LoginData;
   public form!: FormGroup;
+
+  constructor(private service: UsersService) {}
 
   ngOnInit(): void {
     this.buildForm();
@@ -25,6 +29,29 @@ export class LoginComponent implements OnInit {
   public loginForm(event: any): void {
     event.preventDefault();
     this.loginData = this.form.getRawValue();
-    console.log(this.loginData);
+    this.service.getLogins().subscribe((logins: CreateUserData[]) => {
+      let logged: boolean = false;
+      for (let index = 0; index < logins.length; index++) {
+        const user = logins[index];
+
+        if (
+          user.loginData.userName === this.loginData.userName &&
+          user.loginData.password === this.loginData.password
+        ) {
+          console.log('logou');
+          logged = true;
+        }
+      }
+      if (!logged) {
+        console.log('não logou');
+      }
+    });
   }
+
+  // public loginForm(event: any): void {
+  //   event.preventDefault();
+  //   this.loginData = this.form.getRawValue();
+  //   this.service.logins?.push(this.loginData);
+  //   console.log(this.service.logins);
+  // }
 }

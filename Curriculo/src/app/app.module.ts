@@ -10,6 +10,8 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { FormsComponent } from './components/forms/forms.component';
 import { LoginComponent } from './components/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CreateUserComponent } from './components/create-user/create-user.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +22,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     ExperienceComponent,
     FormsComponent,
     LoginComponent,
+    CreateUserComponent,
   ],
-  imports: [BrowserModule, MatIconModule, ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    MatIconModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
