@@ -1,27 +1,29 @@
-<form>
-  <h2>Login</h2>
-  <form [formGroup]="form">
-    <div>
-      <label for="user">User Name</label>
-      <input
-        type="text"
-        id="user"
-        type="text"
-        placeholder="Digite seu usuário"
-        formControlName="userName"
-      />
-    </div>
+<section>
+  <form>
+    <h2>Login</h2>
+    <form [formGroup]="form">
+      <div>
+        <label for="user">User Name</label>
+        <input
+          type="text"
+          id="user"
+          type="text"
+          placeholder="Digite seu usuário"
+          formControlName="userName"
+        />
+      </div>
 
-    <div>
-      <label for="passwordUser">Password</label>
-      <input
-        type="password"
-        id="passwordUser"
-        type="password"
-        placeholder="Digite sua senha"
-        formControlName="password"
-      />
-    </div>
+      <div>
+        <label for="passwordUser">Password</label>
+        <input
+          type="password"
+          id="passwordUser"
+          type="password"
+          placeholder="Digite sua senha"
+          formControlName="password"
+        />
+      </div>
+    </form>
+    <button class="btn" (click)="loginForm($event)">Login</button>
   </form>
-  <button class="btn" (click)="loginForm()">Login</button>
-</form>
+</section>

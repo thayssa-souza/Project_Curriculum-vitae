@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { LoginFormData } from 'src/models/login-data.models';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css'],
+  styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
+  loginData!: LoginFormData;
   public form!: FormGroup;
 
   ngOnInit(): void {
@@ -20,7 +22,9 @@ export class LoginComponent implements OnInit {
     });
   }
 
-  public loginForm(): void {
-    console.log(this.form);
+  public loginForm(event: any): void {
+    event.preventDefault();
+    this.loginData = this.form.getRawValue();
+    console.log(this.loginData);
   }
 }
