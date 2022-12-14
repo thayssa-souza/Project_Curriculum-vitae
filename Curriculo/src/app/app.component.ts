@@ -18,38 +18,49 @@ export class AppComponent {
       email: 'ex@mail.com',
       phoneNumber: '12244355534',
     },
-    skilss: [
-      {
-        name: 'Adobe Photoshop',
-        level: '90%',
-      },
-      {
-        name: 'Photography',
-        level: '80%',
-      },
-      {
-        name: 'Illustrator',
-        level: '75%',
-      },
-      {
-        name: 'Media',
-        level: '50%',
-      },
-    ],
-    languages: [
-      {
-        name: 'English',
-        level: '100%',
-      },
-      {
-        name: 'Spanish',
-        level: '55%',
-      },
-      {
-        name: 'German',
-        level: '25%',
-      },
-    ],
+    skilss: {
+      title: 'Skils',
+      knowledge:[
+        {
+          name: 'Adobe Photoshop',
+          level: '90%',
+          numberLevel: 90
+        },
+        {
+          name: 'Photography',
+          level: '80%',
+          numberLevel: 80
+        },
+        {
+          name: 'Illustrator',
+          level: '75%',
+          numberLevel: 75
+        },
+        {
+          name: 'Media',
+          level: '50%',
+          numberLevel: 50
+        },
+      ]
+
+    },
+    languages: {
+      title: 'Languages',
+      knowledge: [
+        {
+          name: 'English',
+          numberLevel: 100,
+        },
+        {
+          name: 'Spanish',
+          numberLevel: 55,
+        },
+        {
+          name: 'German',
+          numberLevel: 25,
+        }
+      ]
+    },
     experience: [
       {
         titleSection: {

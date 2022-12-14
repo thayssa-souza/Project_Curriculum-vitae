@@ -1,6 +1,6 @@
 import { BasicInfo } from './../../../models/basic-info.models';
 import { Component, Input } from '@angular/core';
-import { Knowledge } from 'src/models/knowledge.models';
+import { KnowledgeSectionData } from 'src/models/knowledge-section-data.models';
 
 @Component({
   selector: 'app-info-general',
@@ -9,7 +9,7 @@ import { Knowledge } from 'src/models/knowledge.models';
 })
 export class InfoGeneralComponent {
   @Input() public basicInfo!: BasicInfo;
-  @Input() public skills!: Knowledge;
-  @Input() public languages!: Knowledge;
+  @Input() public skills!: KnowledgeSectionData;
+  @Input() public languages!: KnowledgeSectionData;
 }
 

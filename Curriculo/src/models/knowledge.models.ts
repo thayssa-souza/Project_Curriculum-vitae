@@ -1,6 +1,7 @@
 export interface Knowledge {
   name: string;
-  level: string;
+  level?: string;
+  numberLevel?: number;
 };
 
 

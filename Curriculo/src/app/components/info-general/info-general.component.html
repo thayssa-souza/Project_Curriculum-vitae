@@ -38,56 +38,35 @@
       <span class="material-symbols-outlined">
         emergency
        </span>
-      <h3>Skills</h3>
+      <h3 [innerHTML]="skills.title"></h3>
     </div>
 
-    <p>Adobe Photoshop</p>
-    <div class="containerSkills">
-      <div class="box90">
-        <h6>90%</h6>
+    <ng-container *ngFor="let item of skills.knowledge">
+      <p [innerHTML]="item.name"></p>
+      <div class="containerSkills">
+        <div class="box{{item.numberLevel}}">
+          <h6 [innerHTML]="item.level">90%</h6>
+        </div>
       </div>
-    </div>
-    <p>Photography</p>
-    <div class="containerSkills">
-      <div class="box80">
-        <h6>80%</h6>
-      </div>
-    </div>
-    <p>Illustrator</p>
-    <div class="containerSkills">
-      <div class="box75">
-        <h6>75%</h6>
-      </div>
-    </div>
-    <p>Media</p>
-    <div class="containerSkills">
-      <div class="box50">
-        <h6>50%</h6>
-      </div>
-    </div>
+    </ng-container>
+
   </section>
   <section class="languages">
+
     <div class="items">
       <span class="material-symbols-outlined">
         public
       </span>
-      <h3>Languages</h3>
+      <h3 [innerHTML]="languages.title"></h3>
     </div>
 
-    <p>English</p>
-    <div class="containerLanguages">
-      <div class="box100">
+    <ng-container *ngFor="let item of languages.knowledge">
+      <p [innerHTML]="item.name"></p>
+      <div class="containerLanguages">
+        <div class="box{{item.numberLevel}}">
+        </div>
       </div>
-    </div>
-    <p>Spanish</p>
-    <div class="containerLanguages">
-      <div class="box55">
-      </div>
-    </div>
-    <p>German</p>
-    <div class="containerLanguages">
-      <div class="box25">
-      </div>
-    </div>
+    </ng-container>
+
   </section>
 </section>
