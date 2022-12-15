@@ -20,10 +20,12 @@ export class FormsComponent {
       name: new FormControl(null, [
         Validators.required,
         Validators.minLength(3),
+        Validators.pattern("^(?!.{51})[áaàâã-zA-Z-]+(?: [a-zA-Z]+(?: [a-zA-Z-]+)?)?$")
       ]),
       email: new FormControl(null, [
         Validators.required,
         Validators.email,
+        Validators.pattern("[A-Za-z0-9._%-]+@[A-Za-z0-9._%-]+\\.[a-z]{2,3}")
       ]),
       message: new FormControl(null, [
         Validators.required,
@@ -33,7 +35,7 @@ export class FormsComponent {
   }
 
   public submitForm(): void {
-    alert("Mensagem enviada!")
+    alert("Mensagem enviada com suceso!")
     console.log(this.form);
    }
 }
