@@ -10,7 +10,7 @@
         type = "text"
         placeholder="Nome completo"
         />
-        <span class="invalid-feedback">* Nome é obrigatório</span>
+        <span class="invalid-feedback" *ngIf="form.controls['name'].errors">* Nome é obrigatório, no mínimo com 3 caracteres</span>
     </div>
 
     <div class="input-group">
@@ -22,7 +22,7 @@
         type = "email"
         placeholder="name@example.com"
         />
-        <span class="invalid-feedback">* E-mail é obrigatório</span>
+        <span class="invalid-feedback" *ngIf="form.controls['email'].errors">* E-mail é obrigatório</span>
     </div>
 
     <div class="input-group">
@@ -33,7 +33,7 @@
         id = "message"
         placeholder="Digite sua mensagem"
         ></textarea>
-        <span class="invalid-feedback">* Mensagem é obrigatória</span>
+        <span class="invalid-feedback" *ngIf="form.controls['message'].errors">* Campo obrigatório no mínimo 5 caracteres</span>
     </div>
     <button type="submit" class="btn btn-outline-success" (click)="submitForm()">Enviar</button>
 </form>

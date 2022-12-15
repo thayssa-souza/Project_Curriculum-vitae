@@ -19,13 +19,11 @@ export class FormsComponent {
     this.form = new FormGroup({
       name: new FormControl(null, [
         Validators.required,
-        Validators.minLength(2),
-        Validators.pattern("^[a-z]$")
+        Validators.minLength(3),
       ]),
       email: new FormControl(null, [
         Validators.required,
         Validators.email,
-        Validators.pattern("^[a-z0-9._+-]+@[a-z0-9.-]+\\.[a-z]{2}$")
       ]),
       message: new FormControl(null, [
         Validators.required,
