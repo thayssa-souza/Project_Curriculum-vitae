@@ -20,7 +20,7 @@ export class FormsComponent {
       name: new FormControl(null, [
         Validators.required,
         Validators.minLength(3),
-        Validators.pattern("^(?!.{51})[áaàâã-zA-Z-]+(?: [a-zA-Z]+(?: [a-zA-Z-]+)?)?$")
+        Validators.pattern("^(?!.{51})[a-zA-Zà-úÀ-Ú-]+(?: [a-zA-Zà-úÀ-Ú]+(?: [a-zA-Zà-úÀ-Ú-]+)?)?$")
       ]),
       email: new FormControl(null, [
         Validators.required,
