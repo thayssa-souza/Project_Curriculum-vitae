@@ -2,35 +2,38 @@
     <div>
     </div>
     <div class="input-group">
-        <label class="input-group-text" for="nome">Nome</label>
+        <label class="input-group-text" for="name">Nome</label>
         <input class="form-control"
-        formControlName = "nome"
-        id = "nome"
+        formControlName = "name"
+        [ngClass]="{ 'is-invalid': form.controls['name'].touched && form.controls['name'].errors}"
+        id = "name"
         type = "text"
         placeholder="Nome completo"
-        required
         />
+        <span class="invalid-feedback">* Nome é obrigatório</span>
     </div>
 
     <div class="input-group">
         <label class="input-group-text" for="email">Email</label>
         <input class="form-control"
         formControlName = "email"
+        [ngClass]="{ 'is-invalid': form.controls['email'].touched && form.controls['email'].errors}"
         id = "email"
         type = "email"
         placeholder="name@example.com"
-        required
         />
+        <span class="invalid-feedback">* E-mail é obrigatório</span>
     </div>
 
     <div class="input-group">
         <label class="input-group-text" for="message">Mensagem</label>
         <textarea class="form-control"
         formControlName = "message"
+        [ngClass]="{ 'is-invalid': form.controls['message'].touched && form.controls['message'].errors}"
         id = "message"
         placeholder="Digite sua mensagem"
-        required
         ></textarea>
+        <span class="invalid-feedback">* Mensagem é obrigatória</span>
     </div>
     <button type="submit" class="btn btn-outline-success" (click)="submitForm()">Enviar</button>
 </form>
