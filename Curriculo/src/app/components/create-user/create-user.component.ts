@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { CreateUserData } from 'src/models/createUser-data.models';
 import { UsersService } from 'src/app/services/users.service';
 import { ImageSnippet } from 'src/models/image-snippet.models';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-user',
@@ -15,7 +16,7 @@ export class CreateUserComponent implements OnInit {
   public selectedFile!: ImageSnippet;
   public imgSrc!: string;
 
-  constructor(private service: UsersService) {}
+  constructor(private service: UsersService, private router: Router) {}
   ngOnInit(): void {
     this.buildForm();
   }
@@ -52,8 +53,20 @@ export class CreateUserComponent implements OnInit {
     this.service.postUsers(this.createData).subscribe(
       (result) => {
         console.log(result);
+
+        alert('user created successfully');
+
+        let userIndex!: string;
+
+        this.service.getLogins().subscribe((logins: CreateUserData[]) => {
+          let quantify = logins.length - 1;
+          userIndex = quantify.toString();
+          let user = 'userAcess';
+          localStorage.setItem(user, userIndex);
+          this.router.navigateByUrl('info-general-dynamic');
+        });
       },
-      (error) => console.log(error)
+      (error) => alert('User not created successfully... Try again!')
     );
   }
 

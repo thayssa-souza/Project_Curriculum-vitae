@@ -1,13 +1,15 @@
 <div class="foot">
-  <h3>{{ dataFooter.info }}</h3>
-  <ul >
-    <li *ngFor="let icon of dataFooter.socialMedia"><mat-icon>{{icon.icon}}</mat-icon></li>
+  <h3>{{ footer.info }}</h3>
+  <ul>
+    <li *ngFor="let icon of footer.socialMedia">
+      <mat-icon>{{ icon.icon }}</mat-icon>
+    </li>
   </ul>
 
   <h3>
-    {{ dataFooter.developed.text }}
-    <a class="foot__link" href="{{ dataFooter.developed.link }}">{{
-      dataFooter.developed.textLink
+    {{ footer.developed.text }}
+    <a class="foot__link" href="{{ footer.developed.link }}">{{
+      footer.developed.textLink
     }}</a>
   </h3>
 </div>

@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './app-routing.model';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatIconModule } from '@angular/material/icon';
@@ -12,6 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CreateUserComponent } from './components/create-user/create-user.component';
 import { InfoGeneralComponent } from './components/info-general/info-general.component';
+import { MainPageComponent } from './components/main-page/main-page.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +26,14 @@ import { InfoGeneralComponent } from './components/info-general/info-general.com
     LoginComponent,
     CreateUserComponent,
     InfoGeneralDynamicComponent,
+    MainPageComponent,
   ],
   imports: [
     BrowserModule,
     MatIconModule,
     ReactiveFormsModule,
     HttpClientModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
