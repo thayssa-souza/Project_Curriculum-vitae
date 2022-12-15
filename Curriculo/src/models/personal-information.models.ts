@@ -1,4 +1,7 @@
+import { ImageSnippet } from './image-snippet.models';
+
 export interface PersonaInformationData {
+  imageUser: ImageSnippet;
   name: string;
   occupation: string;
   cpf: string;

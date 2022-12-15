@@ -3,14 +3,12 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { CreateUserData } from 'src/models/createUser-data.models';
 import { LoginData } from 'src/models/login-data.models';
-import { PersonaInformationData } from 'src/models/personal-information.models';
 
 @Injectable({
   providedIn: 'root',
 })
 export class UsersService {
   private loginsList?: LoginData[];
-  private UserPersonalInformation?: PersonaInformationData[];
   private url = 'http://localhost:3000/User';
 
   constructor(private httpClient: HttpClient) {

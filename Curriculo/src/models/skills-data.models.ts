@@ -1,4 +1,4 @@
 export interface SkillsData {
-  skillName: string;
-  level: string;
+  skillName?: string;
+  level?: string;
 }

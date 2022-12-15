@@ -1,6 +1,22 @@
 <section class="container">
   <h2 class="form__title">Create New User</h2>
   <form [formGroup]="form">
+    <label class="image-upload-container btn btn-bwm">
+      <span>Select Image </span>
+      <input
+        type="file"
+        id="image"
+        multiple
+        (change)="previewFile($event)"
+      /><br />
+      <img
+        id="img__preview"
+        [src]="imgSrc"
+        height="400"
+        alt="Image preview..."
+      /><br />
+    </label>
+
     <div class="PersonalInformation" formGroupName="personalInformationData">
       <div class="form-field">
         <label class="form-field__label" for="user">Name</label>
@@ -17,7 +33,7 @@
         <input
           class="form-field__input"
           type="text"
-          id="name"
+          id="occupation"
           placeholder="Type your complete name (without abreviations)..."
           formControlName="occupation"
         />
@@ -84,7 +100,7 @@
       </div>
     </div>
 
-    <div class="skillData" formGroupName="skillData">
+    <div class="form-field__skill">
       <div class="form-field">
         <label class="form-field__label" for="user">Skill name</label>
         <input
@@ -95,27 +111,87 @@
           formControlName="skillName"
         />
       </div>
-      <div class="form-field">
-        <label class="form-field__label" for="user">Level</label>
-        <input
-          class="form-field__input"
-          type="text"
-          id="level"
-          placeholder="Type your skill level..."
-          formControlName="level"
+      <fieldset class="form-field">
+        <legend>What is your skill level?</legend>
+        <label for="radio-begginer"
+          ><input
+            type="radio"
+            value="begginer"
+            name="skillLevel"
+            id="radio-begginer"
+            formControlName="skillLevel"
+            checked
+          />
+          Begginer</label
+        >
+
+        <label for="radio-intermediary"
+          ><input
+            type="radio"
+            name="skillLevel"
+            value="intermediary"
+            id="radio-intermediary"
+            formControlName="skillLevel"
+          />
+          Intermediary</label
+        >
+        <label for="radio-advanced">
+          <input
+            type="radio"
+            name="skillLevel"
+            value="advanced"
+            id="radio-advanced"
+            formControlName="skillLevel"
+          />
+          Advanced</label
+        >
+      </fieldset>
+    </div>
+
+    <label class="form-field__label" for="user">Language</label>
+    <input
+      class="form-field__input"
+      type="text"
+      id="languageName"
+      placeholder="Type your skill level..."
+      formControlName="languageName"
+    />
+
+    <fieldset class="form-field">
+      <legend>What is your language level?</legend>
+      <label for="radio-l-begginer"
+        ><input
+          type="radio"
+          name="languagelevel"
+          value="begginer"
+          formControlName="languagelevel"
+          id="radio-l-begginer"
         />
-      </div>
-    </div>
-    <div class="form-field">
-      <label class="form-field__label" for="user">Language</label>
-      <input
-        class="form-field__input"
-        type="text"
-        id="level"
-        placeholder="Type your skill level..."
-        formControlName="languages"
-      />
-    </div>
+        Begginer</label
+      >
+
+      <label for="radio-l-intermediary"
+        ><input
+          type="radio"
+          name="languagelevel"
+          value="intermediary"
+          formControlName="languagelevel"
+          id="radio-l-intermediary"
+          checked
+        />
+        Intermediary</label
+      >
+      <label for="radio-l-advanced">
+        <input
+          type="radio"
+          name="languagelevel"
+          value="advanced"
+          formControlName="languagelevel"
+          id="radio-l-advanced"
+        />
+        Advanced</label
+      >
+    </fieldset>
     <div class="LoginCreate" formGroupName="loginData">
       <div class="form-field">
         <label class="form-field__label" for="user">User Name</label>
@@ -138,9 +214,11 @@
           formControlName="password"
         />
       </div>
-      <div class="button-wrapper">
-        <button class="btn" (click)="CreateUserForm($event)">Create</button>
-      </div>
     </div>
+    <div class="button-wrapper">
+      <button class="btn" (click)="CreateUserForm($event)">Create</button>
+    </div>
+
+    <br /><br />
   </form>
 </section>

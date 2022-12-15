@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatIconModule } from '@angular/material/icon';
-
 import { AppComponent } from './app.component';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { InfoGeneralComponent } from './components/info-general/info-general.component';
+import { InfoGeneralDynamicComponent } from './components/info-general-dynamic/info-general-dynamic.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { FormsComponent } from './components/forms/forms.component';
 import { LoginComponent } from './components/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CreateUserComponent } from './components/create-user/create-user.component';
+import { InfoGeneralComponent } from './components/info-general/info-general.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +23,7 @@ import { CreateUserComponent } from './components/create-user/create-user.compon
     FormsComponent,
     LoginComponent,
     CreateUserComponent,
+    InfoGeneralDynamicComponent,
   ],
   imports: [
     BrowserModule,

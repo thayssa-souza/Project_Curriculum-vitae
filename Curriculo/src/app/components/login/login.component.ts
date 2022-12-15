@@ -47,11 +47,4 @@ export class LoginComponent implements OnInit {
       }
     });
   }
-
-  // public loginForm(event: any): void {
-  //   event.preventDefault();
-  //   this.loginData = this.form.getRawValue();
-  //   this.service.logins?.push(this.loginData);
-  //   console.log(this.service.logins);
-  // }
 }

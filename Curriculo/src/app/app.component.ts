@@ -20,29 +20,28 @@ export class AppComponent {
     },
     skilss: {
       title: 'Skils',
-      knowledge:[
+      knowledge: [
         {
           name: 'Adobe Photoshop',
           level: '90%',
-          numberLevel: 90
+          numberLevel: 90,
         },
         {
           name: 'Photography',
           level: '80%',
-          numberLevel: 80
+          numberLevel: 80,
         },
         {
           name: 'Illustrator',
           level: '75%',
-          numberLevel: 75
+          numberLevel: 75,
         },
         {
           name: 'Media',
           level: '50%',
-          numberLevel: 50
+          numberLevel: 50,
         },
-      ]
-
+      ],
     },
     languages: {
       title: 'Languages',
@@ -58,8 +57,8 @@ export class AppComponent {
         {
           name: 'German',
           numberLevel: 25,
-        }
-      ]
+        },
+      ],
     },
     experience: [
       {
