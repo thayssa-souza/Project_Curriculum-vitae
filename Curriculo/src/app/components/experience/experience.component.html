@@ -1,1 +1,9 @@
-<h2>Front End Developer</h2>
+<div class="experience" *ngFor="let experience of experienceData">
+    <p>{{ experience.title }}</p>
+    <div class="experience__data">
+      <mat-icon>calendar_today</mat-icon>
+      {{ experience.timeStart }}
+      {{ experience.timeEnd }}
+    </div>
+    <p>{{ experience.description }}</p>
+</div>
