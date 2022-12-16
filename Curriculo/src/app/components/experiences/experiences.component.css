@@ -4,17 +4,21 @@
   padding: 28px;
   box-shadow: 0 2px 2px 2px var(--gray-shadow); ;
 }
+
 :host .info {
   display: flex;
-  align-items: center;
   padding-bottom: 40px;
   font-size: 30px;
   font-weight: 400;
   color: var(--gray-title);
 }
+
 :host .info__icon {
   padding-right: 60px;
   font-size: 40px;
   min-height: 38px;
   color: var(--primary);
+}
+
+:host .info__text {
 }
