@@ -11,7 +11,7 @@ export class AppComponent {
 
   public data: DataApp = {
     basicInfo: {
-      name: 'Jane Doe',
+      name: 'Zendaya',
       profileImg: '../assets/images/img_perfil.png',
       office: 'Designer',
       city: 'London, UK',
