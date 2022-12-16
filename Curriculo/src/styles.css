@@ -12,15 +12,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   --secondary: #5d4157;
   --tertiary:#a8caba;
   --quaternary:#cad7b2;
+  --black: #000000;
   --padding: 15px;
   --gray: #405040;
+  --gray-title: #666666;
   --ligth-gray: #dedede;
-}
-
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  --gray-shadow : #d5d5d5;
 }
 
 a{

@@ -1,0 +1,33 @@
+:host .experience{
+  background-color: var(----ligth-gray);
+  margin: 14px 14px 0 14px;
+  padding: 28px;
+  box-shadow: 0 2px 2px 2px var(--gray-shadow);
+}
+:host .info {
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--gray-title);
+}
+:host .experience__data {
+  display: flex;
+  align-items: center;
+  color: var(--primary);
+}
+
+:host .experience__data mat-icon {
+  padding-right: 40px;
+}
+
+:host .experience__description mat-icon {
+  color: var(--black);
+}
+
+:host .experience__title {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--gray-title);
+}

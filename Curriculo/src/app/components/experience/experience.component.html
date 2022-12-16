@@ -1,9 +1,9 @@
 <div class="experience" *ngFor="let experience of experienceData">
-    <p>{{ experience.title }}</p>
+    <p class="experience__title">{{ experience.title }}</p>
     <div class="experience__data">
-      <mat-icon>calendar_today</mat-icon>
-      {{ experience.timeStart }}
+      <span class="experience__data-icon"> <mat-icon>calendar_today</mat-icon> </span>
+      {{ experience.timeStart }} -
       {{ experience.timeEnd }}
     </div>
-    <p>{{ experience.description }}</p>
+    <p class="experience__description">{{ experience.description }}</p>
 </div>
